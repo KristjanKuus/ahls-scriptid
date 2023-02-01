@@ -18,9 +18,9 @@ then
 fi
 
 if [ $apache2 -eq 1 ]
-
 then
-sed -i "s/Apache2 Debian Default Page/$user s Apache2 Debian Page/g" $file
+	sed -i "s/Apache2 Debian Default Page/$user s Apache2 Debian Page/g" $file
 else
-echo "Apache2 ei paigaltatud õigesti"
+	echo "Apache2 ei paigaltatud õigesti"
 fi
+done
