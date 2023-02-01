@@ -10,6 +10,7 @@ then
 	apt install apache2
 	echo "Apache on paigaldatud"
 elif [ $apache2 -eq 1 ]
+#Apache on paigaldatud.
 then
 	echo "Apache2 on juba paigaldatud"
 	systemctl start apache2
@@ -17,7 +18,7 @@ then
 fi
 
 if [ $apache2 -eq 1 ]
-#Apache on paigaldatud.
+
 then
 sed -i "s/Apache2 Debian Default Page/$user s Apache2 Debian Page/g" $file
 else
