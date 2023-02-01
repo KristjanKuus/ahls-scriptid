@@ -1,4 +1,3 @@
-
 #!/bin/bash
 FILE=/var/www/html/wp-config-sample.php
 if test -f "$FILE"; then
