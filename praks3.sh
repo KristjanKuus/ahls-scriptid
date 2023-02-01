@@ -1,6 +1,9 @@
 #!/bin/bash
+echo "Sisetage kaust, mida soovite varundada. (Sisetage täis tee, mille lõppus ja alguses on juttumärgid)"
+read kaust
 lahte=$1
-siht="/home_bcp"
+echo "Sisetage siht, kuhu varundused salvestada. (Sisetage täis tee, mille lõppus ja alguses on juttumärgid)"
+read siht
 
 for filename in $(ls $lahte); do
     result=
