@@ -4,6 +4,10 @@ if [ $PMA -eq 0 ];
 #Kui eksisteeri, paigaldada
   then
   echo "PhpMyAdmin'i paigaldus koos vajalikute lisadega"
+  wget https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
+  dpkg -i mysql-apt-config_0.8.24-1_all.deb
+  apt install mysql
+  apt install php
   apt install phpmyadmin
   echo "PhpMyAdmin on nüüd paigaldatud"
 elif [ $PMA -eq 1 ];
